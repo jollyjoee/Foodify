@@ -408,14 +408,8 @@ body {
     border-top-right-radius: 15px;
 }
 
-.exploregroup {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-
 .footerbutton {
-    position: sticky;
+    position: relative;
     display: flex;
     background-color: #fab98ba6;
     color: #f7f7f7;
