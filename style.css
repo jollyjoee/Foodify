@@ -492,7 +492,7 @@ body {
     height: 33px;
 }
 
-.profilemenu::before {
+.profilemenu {
     display: none;
     animation-duration: 0.2s;
     animation-name: menutransition;
