@@ -6,6 +6,7 @@ html, body, * {
     margin: 0;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -15,16 +16,22 @@ body {
 
 .header {
     padding: 0;
-    text-align: center;
     font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 4px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Poppins;
     font-style: italic;
+    background-image: url(assets/Foodify.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 80px;
 }
 
 .searcharea {
-    margin: 10px;
+    margin: 5px;
     display: flex;
     align-content: flex-start;
     gap: 15px;
@@ -41,7 +48,6 @@ body {
 }
 
 .locationimg {
-    
     margin-top: 20%;
     margin-left: 20%;
     margin-bottom: 20%;
@@ -114,6 +120,24 @@ body {
     margin-top: 4px;
     color: rgb(94, 94, 94);
     font-family: Poppins;
+}
+
+#adviewall:hover {
+    color:#ff8d3a;
+    animation-name: rotateviewall;
+    animation-duration: 0.5s;
+}
+
+@keyframes rotateviewall {
+    0% {
+        transform: rotate(90deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
 .filter {
