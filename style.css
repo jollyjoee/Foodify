@@ -402,7 +402,7 @@ body {
     height: 65px;
     background-color: #ff8d3a;
     bottom: -1px;
-    position: sticky;
+    position: fixed;
     z-index: 999999;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -421,7 +421,7 @@ body {
     color: #f7f7f7;
     border-radius: 60px;
     padding: 5px 13px 5px 13px;
-    margin-top: auto;
+    margin-top: 3%;
     margin-bottom: auto;
     margin-left:30px;
 }
@@ -500,11 +500,13 @@ body {
     background-color: #ff8d3a;
     top: 0px;
     right: 0px;
-    height: 99.5%;
-    width: 55%;
+    height: calc(100vh - 63px);
+    width: 55vw;
     z-index: 9998;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @keyframes menutransition {
@@ -518,7 +520,13 @@ body {
    }
 }
 
+.sidemenugroup {
+    display: flex;
+    flex-direction: column;
+}
+
 .welcomename {
+    text-align: right;
     margin-top: 10px;
     font-family: Poppins;
     margin-right: 10px;
@@ -553,7 +561,7 @@ body {
     justify-content: flex-start;
     margin:auto;
     margin-right: 15px;
-    margin-top: 140px;
+    margin-top: 10px;
     width: fit-content;
     text-align: right;
     font-family: Poppins;
@@ -585,14 +593,14 @@ body {
 
 .menuadspacegroup {
     width: 90%;
-    height: 55%;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .menuadspace {
-    max-width: 99.5%;
-    height: 44.5%;
+    max-width: 250px;
+    min-height: 150px;
     margin: auto;
     margin-top: 10px;
     border-radius: 5px;
@@ -614,14 +622,18 @@ body {
     background-position: 0px 0px;
 }
 
+.test {
+    position: relative;
+}
+
 .businessgroup {
-    position: absolute;
+    position: relative;
     font-family: Poppins;
     margin-left: 10px;
     margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: 600;
-    bottom: 70px;
 }
 
 .businessemail, .businessnumber, .businessaddress {
