@@ -494,14 +494,14 @@ body {
 
 .profilemenu {
     display: none;
-    animation-duration: 0.2s;
+    animation-duration: 0.3s;
     animation-name: menutransition;
     position: fixed;
     background-color: #ff8d3a;
     top: 0px;
     right: 0px;
     height: 99.5%;
-    width: 50%;
+    width: 40%;
     z-index: 9998;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -509,42 +509,80 @@ body {
 
 @keyframes menutransition {
     0% {
-        transform: translate(100px)
+        transform: translate(200px);
+        opacity: 0;
     }
     10% {
-        transform: translate(90px)
+        transform: translate(180px);
+        opacity: 0.1;
     }
     20% {
-        transform: translate(80px)
+        transform: translate(160px);
+        opacity: 0.2;
     }
     30% {
-        transform: translate(70px)
+        transform: translate(140px);
+        opacity: 0.3;
     }
     40% {
-        transform: translate(60px)
+        transform: translate(120px);
+        opacity: 0.4;
     }
     50% {
-        transform: translate(50px)
+        transform: translate(100px);
+        opacity: 0.5;
     }
     60% {
-        transform: translate(40px)
+        transform: translate(80px);
+        opacity: 0.6;
     }
     70% {
-        transform: translate(30px)
+        transform: translate(60px);
+        opacity: 0.7;
     }
     80% {
-        transform: translate(20px)
+        transform: translate(40px);
+        opacity: 0.8;
     }
     90% {
-        transform: translate(10px)
+        transform: translate(20px);
+        opacity: 0.9;
     }
     100% {
-        transform: translate(0px)
+        transform: translate(0px);
+        opacity: 1;
     }
 }
 
 .profilepic {
     position: sticky;
+    text-align: center;
+    margin:auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-image: url(assets/placeholderdp.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menugroup {
+    margin:auto;
+    margin-right: 15px;
+    margin-top: 10px;
+    width: fit-content;
+    text-align: right;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.profilemanagement:hover {
+    font-weight: 600;
 }
 
 .categories#adspace {
