@@ -134,7 +134,7 @@ body {
 
 @keyframes rotateviewall {
     0% {
-        transform: rotate(90deg)
+        transform: rotate(0deg)
     }
     50% {
         transform: rotate(180deg)
@@ -490,6 +490,22 @@ body {
     background-size: contain;
     width: 33px;
     height: 33px;
+}
+
+.profilemenu {
+    position: absolute;
+    background-color: #51ff3a;
+    top: 0px;
+    right: 0px;
+    height: 99.5%;
+    width: 50%;
+    z-index: 9998;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.profilepic {
+    position: sticky;
 }
 
 .categories#adspace {
