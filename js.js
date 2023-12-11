@@ -1,10 +1,16 @@
-window.transitionToPage = function(href) {
-    document.querySelector('body').style.opacity = 0
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
-}
+var show = false;
 
-document.addEventListener('DOMContentLoaded', function(event) {
-    document.querySelector('body').style.opacity = 1
-})
+function showSideMenu() {
+    let menu = document.querySelector(".profilemenu");
+    if (show == false) {
+        show = true;
+        console.log(show);
+        menu.style.display = "block";
+    }
+    else {
+        show = !show;
+        console.log(show);
+        menu.style.display = "none";
+    }
+
+}
