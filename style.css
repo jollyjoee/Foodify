@@ -415,13 +415,13 @@ body {
 }
 
 .footerbutton {
-    position: inherit;
+    position: sticky;
     display: flex;
     background-color: #fab98ba6;
     color: #f7f7f7;
     border-radius: 60px;
     padding: 5px 13px 5px 13px;
-    margin-top: 3%;
+    margin-top: 11px;
     margin-bottom: auto;
     margin-left:30px;
 }
