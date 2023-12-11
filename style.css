@@ -12,6 +12,10 @@ html, body, * {
 body {
     overflow-y: auto;
     overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+   transition: opacity .5s;
 }
 
 .header {
@@ -158,6 +162,13 @@ body {
     height: fit-content;
 }
 
+.items#adpage {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
 .itemlist {
     position: inherit;
     background-repeat: no-repeat;
@@ -299,9 +310,13 @@ body {
     display: inline-flex;
     flex-direction: column;
     min-height: 170px;
-    min-width: fit-content;
+    width: 90%;
     border-radius: 5px;
     box-shadow: 1px 1px 4px rgb(170, 170, 170);
+}
+
+.aditemlist#adpage {
+    max-width: 90%;
 }
 
 .adlistimg {
@@ -320,9 +335,14 @@ body {
 .adlistgroup {
     display: inline-table;
     height: inherit;
-    margin:auto;
+    margin: auto;
+    margin-left: 5px;
     width: fit-content;
     padding: 0px 10px 10px 10px
+}
+
+.adlistgroup#adpage {
+    margin-left: 5px
 }
 
 .adlistheader {
@@ -360,17 +380,20 @@ body {
 
 #adlistimg2 {
     background-position: center;
+    background-size: 144px;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/320px--Insert_image_here-.svg.png');
 }
 
 #adlistimg3 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/320px--Insert_image_here-.svg.png');
     background-position: center;
+    background-size: 144px;
 }
 
 #adlistimg4 {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/320px--Insert_image_here-.svg.png');
     background-position: center;
+    background-size: 144px;
 }
 
 .footer {
@@ -391,7 +414,7 @@ body {
     flex-direction: row;
 }
 
-.explore {
+.footerbutton {
     position: inherit;
     display: flex;
     background-color: #fab98ba6;
@@ -403,7 +426,7 @@ body {
     margin-left:30px;
 }
 
-.exploretext {
+.footerbuttontext {
     margin-top: auto;
     margin-bottom: auto;
     margin-left:8px;
@@ -412,12 +435,32 @@ body {
     font-size: 18px;
 }
 
-.exploreicon {
+.footerbuttonicon {
     background-image: url(assets/circle-book-open.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 33px;
     height: 33px;
+}
+
+.footerbuttonicon#adpage {
+    background-image: url(assets/back-icon.png);
+    width: 30px;
+    height: 30px;
+}
+
+.footerbutton:hover {
+    animation-name: footerbuttonhover;
+    animation-duration: 1s;
+}
+
+@keyframes footerbuttonhover {
+    0% {
+        transform: scale(1, 1)
+    }
+    100% {
+        transform: scale(1.1, 1.1)
+    }
 }
 
 .footermenu {
@@ -471,6 +514,12 @@ body {
     background-image: url(https://media.giphy.com/media/x0WI8wlyu7TqM/giphy.gif);
     background-position: center;
     background-size: contain;
+}
+
+#adpage1 {
+    background-image: url(https://media1.giphy.com/media/Kxzh86RXPo8AtQ8VlQ/giphy.gif?cid=ecf05e47s7w5d1octa9rrxllvr11ueyemgujyr7yplem2995&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .material-symbols-outlined {
