@@ -558,7 +558,7 @@ body {
     float: right;
     width: 80px;
     height: 80px;
-    border: 2px solid white;
+    border: 2px solid #ce5c0a;
     border-radius: 50px;
     background-image: url(assets/placeholderdp.png);
     background-position: center;
