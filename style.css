@@ -319,6 +319,13 @@ body {
     max-width: 90%;
 }
 
+.spacer#adpagelast {
+    border-radius: 0px;
+    box-shadow: none;
+    display: block;
+    height: 65px;
+}
+
 .adlistimg {
     background-repeat: no-repeat;
     background-size: cover;
@@ -344,6 +351,8 @@ body {
 .adlistgroup#adpage {
     margin-left: 5px
 }
+
+
 
 .adlistheader {
     font-family: Poppins;
@@ -524,12 +533,18 @@ body {
     margin-top: 10px;
     font-family: Poppins;
     margin-right: 10px;
-    float:right;
+    float: right;
+    font-size: 3vh;
 }
 
 .welcomename::after {
     content: " John!";
     font-weight: 600;
+}
+
+#menuseparator {
+    border: 1px solid #f58231;
+    width: 90%;
 }
 
 .profilepic {
@@ -538,6 +553,7 @@ body {
     margin-left:auto;
     margin-top: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
     float: right;
     width: 80px;
     height: 80px;
@@ -556,11 +572,12 @@ body {
     margin:auto;
     margin-right: 15px;
     margin-top: 10px;
+    margin-bottom: 5px;
     width: fit-content;
     text-align: right;
     font-family: Poppins;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 2vh;
     line-height: 22px;
 }
 
@@ -580,6 +597,18 @@ body {
     color: #000000;
     font-weight: 600;
     text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:auto;
+    margin-right: 15px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: fit-content;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 13px;
+    line-height: 22px;
 }
 .logout:hover {
     color: #b81c1c;
@@ -626,13 +655,13 @@ body {
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 2vh;
     font-weight: 600;
 }
 
 .businessemail, .businessnumber, .businessaddress {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1.6vh;
 }
 
 .categories#adspace {
@@ -657,6 +686,7 @@ body {
     background-image: url(https://media.giphy.com/media/x0WI8wlyu7TqM/giphy.gif);
     background-position: center;
     background-size: contain;
+    margin-bottom: 70px;
 }
 
 #adpage1 {
