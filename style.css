@@ -541,12 +541,13 @@ body {
 
 .welcomename {
     text-align: right;
+    text-wrap: nowrap;
     margin-top: 10px;
     font-family: Poppins;
     margin-right: 10px;
     margin-left: 10px;
     float: right;
-    font-size: 2.8vh;
+    font-size: 6vw;
 }
 
 .welcomename::after {
@@ -589,8 +590,9 @@ body {
     text-align: right;
     font-family: Poppins;
     font-weight: 400;
-    font-size: 2vh;
-    line-height: 27px;
+    font-size: 4vw;
+    line-height: 6.1vw;
+    text-wrap: nowrap;
 }
 
 .profilemanagement:hover {
@@ -614,12 +616,12 @@ body {
     justify-content: flex-start;
     margin:auto;
     margin-right: 15px;
-    margin-top: 2px;
+    margin-top: 2vw;
     margin-bottom: 5px;
     width: fit-content;
     text-align: right;
     font-family: Poppins;
-    font-size: 13px;
+    font-size: 4.5vw;
     line-height: 22px;
 }
 .logout:hover {
