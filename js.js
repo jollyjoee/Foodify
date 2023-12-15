@@ -12,7 +12,7 @@ const headerAnimationClose = [
     { transform: "translate(0px)" }
 ];
 const headerTiming = {
-    duration: 300,
+    duration: 340,
     iterations: 1,
     fill: 'forwards'
 };
