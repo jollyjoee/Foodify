@@ -19,6 +19,11 @@ body {
 }
 
 .header {
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;  
     padding: 0;
     font-size: 40px;
     margin-top: 10px;
@@ -72,7 +77,7 @@ body {
     border: none;
     padding: 0px 57px 0px 13px;
     background-image: url('assets/search-icon.png'); 
-    background-position: 97% 10px; 
+    background-position: 98% 10px; 
     background-repeat: no-repeat;
     font-size: 15px;
     font-family: Poppins;
@@ -498,7 +503,6 @@ body {
 .profilemenu {
     display: none;
     animation-duration: .4s;
-    animation-name: menutransition;
     position: fixed;
     background-color: #ff8d3a;
     top: 0px;
@@ -513,7 +517,7 @@ body {
     padding: 5px 5px 5px 5px;
 }
 
-@keyframes menutransition {
+@keyframes menutransitionopen {
    from {
         transform: translate(200px);
         opacity: 0;
@@ -523,6 +527,17 @@ body {
         opacity: 1;
    }
 }
+
+@keyframes menutransitionclose {
+    from {
+         transform: translate(0px);
+         opacity: 1;
+    }
+    to {
+         transform: translate(200px);
+         opacity: 0;
+    }
+ }
 
 .sidemenugroup {
     display: flex;
@@ -534,8 +549,9 @@ body {
     margin-top: 10px;
     font-family: Poppins;
     margin-right: 10px;
+    margin-left: 10px;
     float: right;
-    font-size: 3vh;
+    font-size: 2.8vh;
 }
 
 .welcomename::after {
