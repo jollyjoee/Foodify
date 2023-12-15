@@ -8,14 +8,18 @@ const headerAnimationOpen = [
     { transform: "translate(0px)" },
     { transform: "translate(-35vw)" },
     { transform: "translate(-27vw)" },
+    { transform: "translate(-33vw)" },
+    { transform: "translate(-27vw)" },
     { transform: "translate(-30vw)" },
     { transform: "translate(-27vw)" }
 ];
 const headerAnimationClose = [
     { transform: "translate(-27vw)" },
-    { transform: "translate(10vw)" },
+    { transform: "translate(8vw)" },
     { transform: "translate(0vw)" },
-    { transform: "translate(5vw)" },
+    { transform: "translate(6vw)" },
+    { transform: "translate(0vw)" },
+    { transform: "translate(3vw)" },
     { transform: "translate(0vw)" },
 ];
 const headerTiming = {
