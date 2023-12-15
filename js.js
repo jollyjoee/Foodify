@@ -2,7 +2,6 @@ var show = false;
 var isAnimating = false;
 const menu = document.querySelector(".profilemenu");
 const footer = document.querySelector(".footer");
-const body = document.querySelector("body");
 const header = document.querySelector(".header")
 const headerAnimationOpen = [
     { transform: "translate(0px)" },
@@ -40,6 +39,7 @@ function showSideMenu() {
         menu.style.animationName = "menutransitionopen";
         menu.style.display = "block";
         footer.style.borderTopRightRadius = "0px";
+        document.body.style.overflow = "hidden";
         header.animate(headerAnimationOpen, headerTiming)
     }
     else {
@@ -49,6 +49,7 @@ function showSideMenu() {
         header.animate(headerAnimationClose, headerTiming)
         setTimeout(function(){
             menu.style.display = "none";
+            document.body.style.overflow = "scroll";
         }, 300);
     }
     setTimeout(function() {
