@@ -39,7 +39,6 @@ function showSideMenu() {
         menu.style.animationName = "menutransitionopen";
         menu.style.display = "block";
         footer.style.borderTopRightRadius = "0px";
-        document.body.style.overflow = "hidden";
         header.animate(headerAnimationOpen, headerTiming)
     }
     else {
@@ -49,7 +48,6 @@ function showSideMenu() {
         header.animate(headerAnimationClose, headerTiming)
         setTimeout(function(){
             menu.style.display = "none";
-            document.body.style.overflow = "scroll";
         }, 300);
     }
     setTimeout(function() {
