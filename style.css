@@ -382,7 +382,7 @@ body {
 }
 
 #adlistimg1 {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/-Insert_image_here-.svg/320px--Insert_image_here-.svg.png');
+    background-image: url('https://www.bgcaz.org/wp-content/uploads/2023/08/BGCAZ-Car-Raffle-Mobile.jpg');
     background-position: center;
     background-size: 144px;
 }
@@ -556,6 +556,7 @@ body {
 }
 
 #menuseparator {
+    margin-top: 1.5vh;
     border: 1px solid #f58231;
     width: 90%;
 }
@@ -566,7 +567,6 @@ body {
     margin-left:auto;
     margin-top: 10px;
     margin-right: 10px;
-    margin-bottom: 10px;
     float: right;
     width: 80px;
     height: 80px;
@@ -616,13 +616,10 @@ body {
     justify-content: flex-start;
     margin:auto;
     margin-right: 15px;
-    margin-top: 2vw;
-    margin-bottom: 5px;
     width: fit-content;
     text-align: right;
     font-family: Poppins;
     font-size: 4.5vw;
-    line-height: 22px;
 }
 .logout:hover {
     color: #b81c1c;
@@ -669,13 +666,14 @@ body {
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
-    font-size: 2vh;
+    margin-right: 10px;
+    font-size: 4.5vw;
     font-weight: 600;
 }
 
 .businessemail, .businessnumber, .businessaddress {
     font-weight: 400;
-    font-size: 1.6vh;
+    font-size: 3.6vw;
 }
 
 .categories#adspace {
