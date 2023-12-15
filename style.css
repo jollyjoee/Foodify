@@ -558,7 +558,7 @@ body {
 }
 
 .welcomename::after {
-    content: " Joe!";
+    content: " Stan!";
     font-weight: 600;
 }
 
