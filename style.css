@@ -536,23 +536,38 @@ body {
 
 .sidemenugroup {
     display: flex;
+    flex-direction: row;
+}
+
+.nameandnumber {
+    display: flex;
     flex-direction: column;
+    margin-top: 1.5vh;
 }
 
 .welcomename {
-    text-align: right;
-    text-wrap: nowrap;
+    text-wrap: pretty;
     margin-top: 10px;
     font-family: Poppins;
     margin-right: 10px;
     margin-left: 10px;
-    float: right;
-    font-size: 6vw;
+    margin-top: auto; margin-bottom: auto;
+    font-size: 5vw;
+    width: min-content;
 }
 
 .welcomename::after {
     content: " John!";
     font-weight: 600;
+}
+
+.number {
+    text-wrap: nowrap;
+    font-family: Poppins;
+    margin-right: 10px;
+    margin-left: 10px; margin-bottom: auto;
+    font-size: 3vw;
+    width: min-content;
 }
 
 #menuseparator {
