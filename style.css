@@ -497,7 +497,7 @@ body {
 
 .profilemenu {
     display: none;
-    animation-duration: .419s;
+    animation-duration: .3s;
     position: fixed;
     background-color: #ff8d3a;
     top: 0px;
