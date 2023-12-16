@@ -672,6 +672,13 @@ body {
     background-position: 0px 0px;
 }
 
+#menuadspace3 {
+    background-image: url(https://media2.giphy.com/media/Ka2ap1tZeqtoThCpfN/giphy.webp?cid=6c09b9528mnuzag7pynoon4215nrr6qc4wbcoaefqg0dhrlt&ep=v1_internal_gif_by_id&rid=giphy.webp&ct=g);
+    background-repeat: norepeat;
+    background-size: 290px;
+    background-position: 0px 0px;
+}
+
 .test {
     position: relative;
 }
