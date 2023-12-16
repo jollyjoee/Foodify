@@ -676,7 +676,7 @@ body {
     background-image: url(https://media1.giphy.com/media/hhKTa7O8e2t7a/giphy.gif?cid=ecf05e47jpxm5czyx69r7lodushcimavu590q83oj1rpig2m&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     background-repeat: no-repeat;
     background-size: 290px;
-    background-position: 0px 0px;
+    background-position: center;
 }
 
 .test {
