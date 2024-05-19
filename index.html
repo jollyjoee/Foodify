@@ -190,10 +190,22 @@
         autoplay: true,
         autoplaySpeed: 8000,
         swipeToSlide: true,
-        infinite: false,
+        infinite: true,
         centerMode: true,
         centerPadding: '10px',
       });
+    slick.on( 'beforeChange', function( event, slick, currentSlide, nextSlide ) {
+	if ( nextSlide == 0 ) {
+		var cls = 'slick-current slick-active' + ( opt.centerMode ? ' slick-center' : '' );
+
+		setTimeout(function() {
+			$( '[data-slick-index="' + slick.$slides.length + '"]' ).addClass( cls ).siblings().removeClass( cls );
+			for (var i = slick.options.slidesToShow - 1; i >= 0; i--) {
+				$( '[data-slick-index="' + i + '"]' ).addClass( cls );
+			}
+		}, 10 );
+	}
+});
     });
   </script>
 </body>
