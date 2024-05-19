@@ -104,6 +104,17 @@ body {
     overflow-y: hidden;
 }
 
+.single-item {
+    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px 10px 10px 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
 *::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
@@ -699,7 +710,7 @@ body {
     font-size: 3.6vw;
 }
 
-.categories#adspace {
+.single-item#adspace {
     margin-bottom: -10px;
 }
 
