@@ -163,7 +163,7 @@
 
     <div class="separator"></div>
     
-      <div class="single-item" id="adspace">
+      <div class="single-item">
            <a href="https://www.starbucks.com/"><div class="ad" id="ad1"></div></a>
            <a href="https://www.cocacola.com"><div class="ad" id="ad2"></div></a>
       </div>
@@ -186,6 +186,17 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
+      $('.single-item').css({
+          border-radius: 5px;
+          width: 90%;
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding: 0px 10px 10px 10px;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          margin-bottom: -10px;
+      });
       $('.single-item').slick({
         accessibility: true,
         autoplay: true,
