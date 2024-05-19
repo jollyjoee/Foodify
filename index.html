@@ -186,7 +186,13 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
-      $('.single-item').css({
+      $('.single-item').slick({
+        accessibility: true,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        swipeToSlide: true,
+      });
+        $('.single-item').css({
           border-radius: 5px;
           width: 90%;
           margin: auto;
@@ -196,12 +202,6 @@
           overflow-x: scroll;
           overflow-y: hidden;
           margin-bottom: -10px;
-      });
-      $('.single-item').slick({
-        accessibility: true,
-        autoplay: true,
-        autoplaySpeed: 8000,
-        swipeToSlide: true,
       });
     });
   </script>
